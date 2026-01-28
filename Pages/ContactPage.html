@@ -1,0 +1,180 @@
+ <link rel="stylesheet" href="Style/ContactPage.css">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop normal form submit
+    window.location.href = "index.html"; // or "/" for homepage
+  });
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-container">
+    <img src="images/logo.png" alt="Company Logo" class="logo">
+
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="ServicesPage.html">Services</a></li>
+      <li><a href="GalleryPage.html">Gallery</a></li>
+      <li><a href="ContactPage.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="container">
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h2>Book Your Appointment</h2>
+    <p>Response with available times within 2-3 buisness days</p>
+  </section>
+
+  <!-- GRID -->
+  <section class="contact-grid">
+
+    <!-- FORM -->
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+
+      <label>Name</label>
+      <input type="text">
+
+      <label>Email</label>
+      <input type="email">
+
+      <label>Phone</label>
+      <input type="tel">
+
+      <label>Your Address</label>
+      <input type="text">
+
+      <label>Message</label>
+      <textarea rows="6"></textarea>
+
+      <button onclick="window.location.href='index.html'">
+    Send Message
+    </div>
+
+    <!-- INFO COLUMN -->
+    <div class="contact-info">
+
+      <h3>Contact Information</h3>
+
+      <div class="info-item">
+  <img src="images/phone.png" class="info-icon" alt="Phone">
+  <div>
+    <strong>Phone</strong>
+    <p>+44 7354 819684</p>
+  </div>
+</div>
+
+       <div class="info-item">
+  <img src="images/email.png" class="info-icon" alt="Phone">
+  <div>
+          <strong>Email</strong>
+          <p>NazKhaliq@barber.cut.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+  <img src="images/hours.png" class="info-icon" alt="Phone">
+        <div>
+          <strong>Hours</strong>
+          <p>Mon - Fri: 9AM - 5PM<br>Sat - Sun: Closed</p>
+        </div>
+      </div>
+
+      <!-- MAP -->
+<div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Service Area</title>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<style>
+  #map {
+    height: 450px;
+    width: 100%;
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const basingstoke = [51.2665, -1.0924];
+
+  const map = L.map('map').setView(basingstoke, 9);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.circle(basingstoke, {
+    radius: 24140, // 15 miles in meters
+    color: 'red',
+    fillColor: 'red',
+    fillOpacity: 0.3
+  }).addTo(map);
+
+  L.marker(basingstoke).addTo(map)
+    .bindPopup('Basingstoke<br>15-mile service radius');
+</script>
+
+</body>
+</html>
+
+
+
+</div>
+
+
+
+      
+
+
+</main>
+
+<!-- FOOTER -->
+  <footer class="footer">
+  
+    <a
+  href="https://www.facebook.com/USERNAME"
+  target="_blank"
+  class="facebook-btn"
+>
+  Naz Khaliq's Facebook Page
+  </a>
+      <a
+  href="https://www.insatgram.com/USERNAME"
+  target="_blank"
+  class="instagram-btn"
+>
+  Naz Khaliq's Instagram Page
+  </a>
+  
+
+
+</a>
+
+</a>
+  </footer>
+
+</body>
+</html>
+</head>
+<body>

@@ -1,0 +1,282 @@
+/* =====================
+   RESET & BASE
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #050505;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  background-color: rgb(53, 53, 53);
+  padding: 16px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* MAIN NAV */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+/* NAV LINKS */
+.navbar a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* =====================
+   DROPDOWN
+===================== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: rgb(45, 45, 45);
+  min-width: 180px;
+
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* =====================
+   PAGE LAYOUT
+===================== */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* HEADERS */
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* =====================
+   FILTERS
+===================== */
+.filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  margin: 4px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.filters button.active {
+  background: #1f2937;
+  color: white;
+}
+
+/* =====================
+   GALLERY
+===================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  background: white;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.card .content {
+  padding: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* =====================
+   FEATURED
+===================== */
+.featured {
+  margin-top: 60px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.facebook-btn,
+.instagram-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.facebook-btn {
+  background: #3c0aee;
+}
+
+.facebook-btn:hover {
+  background: #2f08b8;
+}
+
+.instagram-btn {
+  background: #87016a;
+}
+
+.instagram-btn:hover {
+  background: #304c71;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: #303131;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 13px;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

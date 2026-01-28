@@ -1,0 +1,268 @@
+
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #050505;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  background-color: rgb(53, 53, 53);
+  padding: 16px 0;
+}
+
+.nav-container {
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* MAIN NAV */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+/* NAV LINKS */
+.navbar a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* =====================
+   DROPDOWN
+===================== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: rgb(45, 45, 45);
+  min-width: 180px;
+
+  display: none;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* =====================
+   HEADER
+===================== */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* =====================
+   SERVICES GRID
+===================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* =====================
+   SERVICE CARD
+===================== */
+.service-card {
+  border: 1px dashed #cfd8e3;
+  padding: 30px;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  background: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.service-card ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.service-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.service-card button {
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid #cfd8e3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* =====================
+   CTA
+===================== */
+.cta {
+  border: 1px dashed #cfd8e3;
+  text-align: center;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #cfd8e3;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* =====================
+   SOCIAL BUTTONS
+===================== */
+.facebook-btn,
+.instagram-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.facebook-btn {
+  background: #3c0aee;
+}
+
+.facebook-btn:hover {
+  background: #2f08b8;
+}
+
+.instagram-btn {
+  background: #87016a;
+}
+
+.instagram-btn:hover {
+  background: #334b69;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: #303131;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 13px;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.cta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #0470f5;
+  background: rgb(4, 96, 255);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.cta-btn:hover {
+  background: #0450e8;
+}

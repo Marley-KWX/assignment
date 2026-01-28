@@ -1,0 +1,257 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FORCE SANS-SERIF EVERYWHERE */
+html, body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #171717;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  background-color: rgb(53, 53, 53);
+  padding: 16px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* MAIN NAV */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+/* NAV LINKS */
+.navbar a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-box {
+  border: 1px dashed #cbd5e1;
+  padding: 48px;
+  margin: 48px 0;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  min-height: 50vh;
+  background-image: url(../images/haircut.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f6f6f6;
+  text-align: center;
+  font-weight: 900;
+  font-size: larger;
+
+  /* TEXT OUTLINE */
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+
+
+.hero-text {
+  display: flex;
+  flex-direction: column; 
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin: 0;
+}
+
+
+
+
+
+/* =====================
+   FEATURES
+===================== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 48px 0;
+}
+
+.feature {
+  border: 1px dashed #cdcccb;
+  padding: 24px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.feature h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* =====================
+   CONTENT
+===================== */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* =====================
+   TESTIMONIAL
+===================== */
+.testimonial {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: #374151;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* =====================
+   SOCIAL BUTTONS
+===================== */
+.facebook-btn,
+.instagram-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.facebook-btn {
+  background: #3c0aee;
+}
+
+.facebook-btn:hover {
+  background: #2f08b8;
+}
+
+.instagram-btn {
+  background: #87016a;
+}
+
+.instagram-btn:hover {
+  background: #304c71;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background-color: #303131;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar ul {
+    gap: 16px;
+  }
+}
