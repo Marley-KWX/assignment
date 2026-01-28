@@ -2,44 +2,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="Style/HomePage.css">
+  <link rel="stylesheet" href="/Pages/Style/HomePage.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Document</title>
   </head>
 <body>
 
   <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" style="margin-bottom: 0%;">
   <div class="nav-container">
-    <img src="images/logo.png" alt="Company Logo" class="logo">
+    <img src="/Pages/images/logo.png" alt="Company Logo" class="logo">
 
     <ul>
-      <li><a href="Index.html">Home</a></li>
-      <li><a href="ServicesPage.html">Services</a></li>
+      <li><a href="/Index.html">Home</a></li>
+      <li><a href="/Pages/ServicesPage.html">Services</a></li>
       <li><a href="GalleryPage.html">Gallery</a></li>
       <li><a href="ContactPage.html">Contact</a></li>
     </ul>
   </div>
 </nav>
 
+<div class="container" style="padding: 0%; margin-top: 0px; margin-left: 0px; margin-right: 0px; max-width: 100%; width: 100%; max-height: 60%;">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="/Pages/images/haircut.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Naz Khaliq</h3>
+          <p>The Best Barber in Basingstoke!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/Pages/images/gallery-fade-two.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Naz Khaliq</h3>
+          <p>Cutting hair at a high quality for over 10 Years!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="/Pages/images/gallery-scissors-two.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Naz Khaliq </h3>
+          <p>Best Offers and discounts!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
   <!-- MAIN CONTENT -->
   <main class="container">
 
     <!-- HERO SECTION -->
     
-  <section class="section-box hero">
-  <div class="hero-image"></div>
+    
 
-  <div class="hero-text">
-    <h1>Naz Khaliq</h1>
-    <p>
-      Naz Khaliq, the best mobile barber in Basingstoke, a very experienced barber,
-      having cut hair for over 10 years now he can guarantee you a precise and well
-      executed haircut.
-    </p>
-  </div>
-</section>
+
+
+  <section class="section-box hero">
+
+
+
+ 
 
 
     <!-- FEATURES -->
@@ -65,18 +117,9 @@
       </div>
     </section>
 
-    <!-- CONTENT SECTION -->
-    <section class="section-box content">
-      <div>
-        <h2>More on Naz Khaliq</h2>
-        <p>
-          Naz is a well respected local basingstoke barber having cut hair over ten years he has built a very strong audience over the years and has expanded his buisness to a high lebel but  he  is still branching and looking for new customers every single day so become one and get in contact today 
-        </p>
-        <button class="btn">Learn More</button>
-      </div>
 
-      <img src="images/content.png" >
-    </section>
+
+    
 
     <!-- TESTIMONIAL -->
     <section class="section-box testimonial">

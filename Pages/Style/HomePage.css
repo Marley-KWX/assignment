@@ -27,6 +27,7 @@ img {
 .navbar {
   background-color: rgb(53, 53, 53);
   padding: 16px 0;
+ 
 }
 
 .nav-container {
@@ -89,48 +90,12 @@ img {
 /* =====================
    HERO
 ===================== */
-.hero {
-  min-height: 50vh;
-  background-image: url(../images/haircut.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #f6f6f6;
-  text-align: center;
-  font-weight: 900;
-  font-size: larger;
-
-  /* TEXT OUTLINE */
-  text-shadow:
-    -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000;
-}
 
 
-.hero-text {
-  display: flex;
-  flex-direction: column; 
-  gap: 16px;
-  text-align: center;
-  align-items: center;
-}
 
-.hero-text h1 {
-  margin: 0;
-  font-size: 3rem;
-}
 
-.hero-text p {
-  max-width: 600px;
-  margin: 0;
-}
+
+
 
 
 
@@ -143,12 +108,12 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin: 48px 0;
+  margin: 16px 0;
 }
 
 .feature {
   border: 1px dashed #cdcccb;
-  padding: 24px;
+  padding: 40px;
 }
 
 .icon {
