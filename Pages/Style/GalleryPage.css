@@ -215,21 +215,9 @@ h1 {
 /* =====================
    RESPONSIVE
 ===================== */
-@media (max-width: 900px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
+/* =====================
+   SOCIAL BUTTONS
+===================== */
 .facebook-btn,
 .instagram-btn {
   display: inline-block;
@@ -260,13 +248,64 @@ h1 {
 /* =====================
    FOOTER
 ===================== */
-.footer {
-  background: #303131;
-  color: #cbd5e1;
+/* =====================
+   CONNECT / FOOTER
+===================== */
+.connect {
+  width: 100%;
+  background: #2b2b2b; /* dark grey / black */
+  padding: 70px 20px;
   text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  font-size: 13px;
+}
+
+/* Title */
+.connect h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #d6b97c; /* gold */
+}
+
+/* Social container */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+/* Social link */
+.social {
+  text-decoration: none;
+  color: #d6b97c; /* gold */
+  font-weight: 500;
+}
+
+/* Social icon circle */
+.social-icon {
+  width: 72px;
+  height: 72px;
+  background: #1f1f1f; /* darker inner circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+.social:hover .social-icon {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7);
+  background: #242424;
+}
+
+/* Subtitle text */
+.subtitle {
+  color: #bfa66a; /* softer gold */
+  font-size: 16px;
 }
 
 /* =====================

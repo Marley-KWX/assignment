@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  
   <link rel="stylesheet" href="/Pages/Style/HomePage.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +31,8 @@
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/Pages/ServicesPage.html">Services</a></li>
-      <li><a href="GalleryPage.html">Gallery</a></li>
-      <li><a href="ContactPage.html">Contact</a></li>
+      <li><a href="/Pages/GalleryPage.html">Gallery</a></li>
+      <li><a href="/Pages/ContactPage.html">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -78,39 +89,24 @@
 </div>
 
 
-  <!-- MAIN CONTENT -->
-  <main class="container">
-
-    <!-- HERO SECTION -->
-    
-    
-
-
-
-  <section class="section-box hero">
-
-
-
- 
-
 
     <!-- FEATURES -->
     <section class="features">
       <div class="feature">
-        <img src="images/Feature.jpg" >
+        <img src="/Pages/images/Feature.jpg" >
         <h3>Wedding Package
         </h3>
         <p>attending a wedding and not having a haircut is not what you want to do so book the wedding package and recive a 25% discount for each groomsman getting a cut </p>
       </div>
 
       <div class="feature">
-        <img src="images/kidscut.jpg">
+        <img src="/Pages/images/kidscut.jpg">
         <h3>Kids Haircuts </h3>
         <p>trying to convince your kid to get a haircut may difficult sometimes but with Naz it will be easy in the comfort of their own home and it will be cheap as Kids get 35% OFF </p>
       </div>
 
       <div class="feature">
-        <img src="images/quotes.jpg">
+        <img src="/Pages/images/quotes.jpg">
         <h3>Customer Quotes</h3>
         <p>"Naz is so precise with every cut" . 
           "Naz just keeps on getting better each and every time" . "He cuts so well and does it for such a low price , quality."</p>
@@ -125,50 +121,56 @@
     <section class="section-box testimonial">
     
       
-       <section>
-        <Card className="bg-gradient-to-br from-amber-50 to-amber-100 border-amber-300">
-          <CardContent className="p-8">
-            <h2 className="text-3xl font-bold mb-4 text-amber-900">Special Offer for New Customers!</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold mb-2 text-amber-600">15% OFF</h3>
-                <p className="text-lg mb-4">Your First Service</p>
-                <p className="text-sm text-slate-600">Book your first appointment and receive 15% off any service. Valid for first-time customers only.</p>
-                <Badge className="mt-4 bg-amber-500">Promo Code: FIRST15</Badge>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold mb-2 text-amber-600">Refer a Friend</h3>
-                <p className="text-lg mb-4">£10 Credit for Both</p>
-                <p className="text-sm text-slate-600">Refer a friend and you both receive £10 credit towards your next service.</p>
-                <Badge className="mt-4 bg-amber-500">Code: REFER10</Badge>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
+     <section class="offers">
+  <h2>Special Offer for New Customers!</h2>
 
-    </section>
+  <div class="offer-grid">
+    <div class="offer-card">
+      <h3>15% OFF</h3>
+      <h4>Your First Service</h4>
+      <p>
+        Book your first appointment and receive 15% off any service.
+        Valid for first-time customers only.
+      </p>
+      <span class="promo">Promo Code: FIRST15</span>
+    </div>
+
+    <div class="offer-card">
+      <h3>Refer a Friend</h3>
+      <h4>£10 Credit for Both</h4>
+      <p>
+        Refer a friend and you both receive £10 credit towards your next service.
+      </p>
+      <span class="promo">Code: REFER10</span>
+    </div>
+  </div>
+</section>
+
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-  
-    <a
-  href="https://www.facebook.com/USERNAME"
-  target="_blank"
-  class="facebook-btn"
->
-  Naz Khaliq's Facebook Page
-  </a>
-      <a
-  href="https://www.insatgram.com/USERNAME"
-  target="_blank"
-  class="instagram-btn"
->
-  Naz Khaliq's Instagram Page
-  </a>
-  
+<section class="connect">
+  <h2>Connect With Naz Khaliq </h2>
+
+  <div class="socials">
+    <a href="#" class="social">
+      <div class="social-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <span>Facebook</span>
+    </a>
+
+    <a href="#" class="social">
+      <div class="social-icon">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <span>Twitter</span>
+    </a>
+  </div>
+</section>
+   
+
 
 
 </a>

@@ -187,89 +187,85 @@ img {
 }
 
 /* =====================
-   SOCIAL
+   CONNECT / FOOTER
 ===================== */
-.follow {
-  margin-top: 30px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.social {
-  width: 30px;
-  height: 30px;
-  background: #e5e7eb;
-}
-
-/* =====================
-   FOOTER
-===================== */
-.facebook-btn,
-.instagram-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.facebook-btn {
-  background: #3c0aee;
-}
-
-.facebook-btn:hover {
-  background: #2f08b8;
-}
-
-.instagram-btn {
-  background: #87016a;
-}
-
-.instagram-btn:hover {
-  background: #304c71;
-}
-
-/* =====================
-   FOOTER
-===================== */
-.footer {
-  background-color: #303131;
-  color: #ffffff;
+.connect {
+  width: 100%;
+  background: #2b2b2b; /* dark grey / black */
+  padding: 70px 20px;
   text-align: center;
-  padding: 24px;
-  font-size: 12px;
+}
+
+/* Title */
+.connect h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #d6b97c; /* gold */
+}
+
+/* Social container */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+/* Social link */
+.social {
+  text-decoration: none;
+  color: #d6b97c; /* gold */
+  font-weight: 500;
+}
+
+/* Social icon circle */
+.social-icon {
+  width: 72px;
+  height: 72px;
+  background: #1f1f1f; /* darker inner circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+.social:hover .social-icon {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7);
+  background: #242424;
+}
+
+/* Subtitle text */
+.subtitle {
+  color: #bfa66a; /* softer gold */
+  font-size: 16px;
 }
 
 /* =====================
-   RESPONSIVE
+   MOBILE
 ===================== */
-@media (max-width: 900px) {
-  .features {
-    grid-template-columns: 1fr;
-  }
-
-  .content {
-    grid-template-columns: 1fr;
-  }
-
-  .navbar ul {
-    gap: 16px;
-  }
-}
-
-
-/* =====================
-   RESPONSIVE
-===================== */
-@media (max-width: 900px) {
-  .contact-grid {
+@media (max-width: 768px) {
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }
+.cta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #0470f5;
+  background: rgb(4, 96, 255);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-weight: 800;
+}
 
+.cta-btn:hover {
+  background: #0450e8;
+}
